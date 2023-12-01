@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+body {
+  font-family: "Sen", sans-serif;
+}
+
+/*================ NavBar ================ */
+
+img:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: "";
+  background-color: black;
+  width: 0%;
+  height: 2px;
+  transition: all 0.5s;
+}
+
+.navbar .navbar-nav .nav-item:hover::after {
+  width: 100%;
+}
+
+/*================ contact page ================ */
+
+/* Number Hideing Style */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
